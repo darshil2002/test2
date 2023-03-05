@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Select Program
+      </button>
+      <div class="dropdown-menu" aria-labelledby="program-dropdown">
+        <label
+          for="prog-check"
+          *ngFor="let prog of programData.virtualProgramList"
+        >
+          <input
+            type="checkbox"
+            name="prog-check"
+            [value]="prog.programName"
+            (change)="updateSelectedPrograms()"
+          />{{ prog.programName }}
+        </label>
+      </div>
+    </div>
+  
+    <div class="dropdown fit">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Select Project
+      </button>
+      <div class="dropdown-menu" aria-labelledby="program-dropdown">
+        <label for="prog-check" *ngFor="let proj of selectedProjects">
+          <input type="checkbox" name="prog-check" [value]="proj.projectName" />{{
+            proj.projectName
+          }}
+        </label>
+      </div>
+    </div>
+  </div>
+  

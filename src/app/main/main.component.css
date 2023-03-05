@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: fit-content;
+  }
+  
+  .fit {
+    margin-left: 20px;
+    width: fit-content;
+  }
+  
+  button {
+    width: 5cm;
+  }
+  
+  input {
+    margin-top: 2px;
+    padding-left: 2px;
+  }
+  
